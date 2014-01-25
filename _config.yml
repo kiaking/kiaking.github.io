@@ -1,0 +1,2 @@
+exclude: [Gemfile, Gemfile.lock]
+encoding: 'UTF-8'

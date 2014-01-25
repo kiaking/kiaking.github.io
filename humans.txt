@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Kia King Ishii -- Developer -- @kiaking85
+
+# TECHNOLOGY COLOPHON
+
+    HTML, CSS, JavaScript, Jekyll
