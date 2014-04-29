@@ -1,0 +1,201 @@
+//
+// Scaffoldings
+//
+// Define global base styling here. It should only be plane elements and do
+// define classes or ids. Those should go in to modules.
+//
+// @author Kia King Ishii <kia.king.08@gmail.com>
+//
+
+//
+// Reset the box-sizing
+//
+
+* {
+  .box-sizing(border-box);
+}
+
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+//
+// Body settings
+//
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background-color: @body-bg;
+  line-height: @line-height-base;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  font-weight: @font-weight-base;
+  color: @text-color;
+}
+
+//
+// Text selection. Customize the background color to match your design.
+//
+
+::-moz-selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+
+//
+// Headings
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  color: @headings-color;
+}
+
+h1 {
+  line-height: @heading1-line-height;
+  font-size: @heading1-font-size;
+}
+
+h2 {
+  line-height: @heading2-line-height;
+  font-size: @heading2-font-size;
+}
+
+h3 {
+  line-height: @heading3-line-height;
+  font-size: @heading3-font-size;
+}
+
+h4 {
+  line-height: @heading4-line-height;
+  font-size: @heading4-font-size;
+}
+
+h5 {
+  line-height: @heading5-line-height;
+  font-size: @heading5-font-size;
+}
+
+h6 {
+  line-height: @heading6-line-height;
+  font-size: @heading6-font-size;
+}
+
+//
+// Body text
+//
+
+p { margin: 0 }
+
+//
+// Links
+//
+
+a {
+  text-decoration: none;
+  color: @link-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: @link-hover-color;
+  }
+}
+
+//
+// Figures
+//
+
+figure { margin: 0; }
+
+//
+// Images
+//
+
+img { vertical-align: middle; }
+
+//
+// Lists
+//
+// @author Kia King Ishii <kia.king.08@gmail.com>
+//
+
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+dd {
+  margin-left: 0;
+}
+
+//
+// Forms
+//
+// Resets form related elements.
+//
+
+input,
+button,
+select,
+textarea {
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+// Allow only vertical resizing of textareas.
+textarea { resize: vertical; }
+
+fieldset {
+  margin-right: 0;
+  margin-left: 0;
+  border: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+}
+
+//
+// Table
+//
+
+table { width: 100%; }
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid @hr-border;
+}

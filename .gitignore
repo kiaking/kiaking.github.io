@@ -17,3 +17,4 @@ $RECYCLE.BIN/
 # User specific & automatically generated files
 #
 _site
+node_modules

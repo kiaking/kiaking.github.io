@@ -1,0 +1,81 @@
+//
+// Mixins
+//
+// Defines the mixins.
+//
+// @author Kia King Ishii <kia.king.08@gmail.com>
+//
+
+//
+// CSS3 properties
+//
+
+//
+// Box sizing
+//
+.box-sizing(@boxmodel) {
+  -moz-box-sizing: @boxmodel;
+       box-sizing: @boxmodel;
+}
+
+//
+// Box shadows
+//
+.box-shadow(@properties) {
+  -webkit-box-shadow: @properties;
+          box-shadow: @properties;
+}
+
+//
+// Transitions
+//
+.transition(@transition) {
+  -webkit-transition: @transition;
+          transition: @transition;
+}
+
+//
+// Transform
+//
+.transform(@properties) {
+  -webkit-transform: @properties;
+     -moz-transform: @properties;
+      -ms-transform: @properties;
+       -o-transform: @properties;
+          transform: @properties;
+}
+
+//
+// Clearfix
+//
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+//
+// Container
+//
+.container(@padding-right: 15px, @padding-left: 15px) {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: @padding-right;
+  padding-right: @padding-left;
+  min-width: 320px;
+  &:extend(.clearfix all);
+
+  @media (min-width: @screen-min-bg) {
+    width: @container-bg;
+  }
+
+  @media (min-width: @screen-min-lg) {
+    width: @container-lg;
+  }
+}

@@ -1,0 +1,58 @@
+//
+// Button modules
+//
+// @author Kia King Ishii <kia.king.08@gmail.com>
+//
+
+//
+// Initialize button
+//
+// default styling for btn. All btn modules should extend this class.
+//
+// .active - Activated style.
+// .block  - Convert element to be block object.
+//
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 4px 8px;
+  background-image: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+
+  &:active,
+  &.active {
+    background-image: none;
+    outline: 0;
+    .box-shadow(inset 0 3px 5px rgba(0, 0, 0, 0.125));
+  }
+
+  &.block {
+    display: block;
+    width: 100%;
+  }
+
+  //
+  // Default button
+  //
+  &.default {
+    border-color: @brand-primary;
+    background-color: @brand-primary;
+    color: #fff;
+    .transition(border-color 0.3s, background-color 0.3s, color 0.3s;);
+
+    &:hover,
+    &:focus,
+    &.active {
+      border-color: darken(@brand-primary, 15%);
+      background-color: darken(@brand-primary, 15%);
+    }
+  }
+}
