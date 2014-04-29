@@ -12,12 +12,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/global.css">
+
     <!-- JavaScript -->
     <script src="/js/vendor/modernizr.js"></script>
   </head>
   <body>
 
-  {{ content }}
+    {% include header.html %}
+
+    {{ content }}
 
   </body>
 </html>

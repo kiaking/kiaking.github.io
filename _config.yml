@@ -1,2 +1,9 @@
-exclude: [Gemfile, Gemfile.lock]
+exclude: [
+    less,
+    node_modules,
+    Gemfile,
+    Gemfile.lock,
+    Gruntfile.js,
+    package.json
+]
 encoding: 'UTF-8'
