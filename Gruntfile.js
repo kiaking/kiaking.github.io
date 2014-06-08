@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       /**
        * For development compile.
        */
-      dev: {
+      compile: {
         files: {
           'css/global.css': 'less/global.less'
         }
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
        *
        * This task will minify CSS
        */
-      pro: {
+      minify: {
         options: {
           cleancss: true
         },
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['less/**/*.less'],
-      tasks: ['less:dev']
+      tasks: ['less:compile']
     }
   });
 
@@ -45,6 +45,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   /* Register Tasks */
-  grunt.registerTask('default', ['less:dev', 'watch']);
+  grunt.registerTask('default', ['less:compile', 'watch']);
 
 };
