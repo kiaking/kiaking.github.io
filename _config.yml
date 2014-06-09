@@ -1,3 +1,4 @@
+permalink: /:categories/:title
 exclude: [
     less,
     node_modules,
