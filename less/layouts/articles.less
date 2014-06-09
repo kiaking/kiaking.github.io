@@ -1,0 +1,67 @@
+//
+// Articles layout
+//
+
+//
+// List all article excerpts
+//
+.articles {
+  margin-right: 15px;
+  margin-left: 15px;
+
+  article { margin-bottom: 45px; }
+
+  h2 {
+    line-height: 28px;
+    font-size: 20px;
+
+    a {
+      color: #333;
+      .transition(color .3s);
+
+      &:focus,
+      &:hover {
+        color: @brand-primary;
+      }
+    }
+  }
+
+  .posted {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    color: #999;
+
+    span { color: #333; }
+  }
+
+  .excerpt {
+    margin-bottom: 15px;
+    color: #666;
+  }
+
+  .read { margin-bottom: 15px; }
+
+  @media (min-width: @screen-min-sm) {
+    margin-right: 30px;
+    margin-left: 30px;
+
+    article { margin-bottom: 60px; }
+  }
+
+  @media (min-width: @screen-min-md) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: (@screen-min-md - 90);
+
+    h2 {
+      line-height: 32px;
+      font-size: 24px;
+    }
+
+    p {
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+}
