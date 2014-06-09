@@ -1,0 +1,47 @@
+//
+// Cover layout
+//
+// This is the main visual for the home page.
+//
+
+//
+// Wrapper for cover
+//
+.cover {
+  margin: 15px;
+  border-bottom: 1px solid #666;
+  padding-bottom: 8px;
+
+  h1 {
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  p { color: #666; }
+
+  @media (min-width: @screen-min-sm) {
+    margin: 30px;
+
+    h1 {
+      line-height: 36px;
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: @screen-min-md) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: (@screen-min-md - 90);
+
+    h1 {
+      line-height: 42px;
+      font-size: 36px;
+    }
+
+    p {
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+}
