@@ -2,40 +2,61 @@
 // Cover layout
 //
 // This is the main visual for the home page.
-//
+// -----------------------------------------------
 
-//
-// Wrapper for cover
-//
 .cover {
-  margin: 15px;
-  border-bottom: 1px solid #666;
-  padding-bottom: 8px;
-
   h1 {
-    line-height: 40px;
-    font-size: 32px;
-    font-weight: bold;
+    margin: 30px auto;
+    width: 290px;
+    height: 75px;
+    background-image: url('../img/logo/logo-kia-king.png');
+    background-position: 0 0;
+    background-size: 290px 75px;
+    background-repeat: no-repeat;
+    font: ~"0/0" a;
+    color: transparent;
+    text-shadow: none;
   }
 
-  p { color: #666; }
+  p {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    color: #666;
+  }
+
+  @media (min-width: @screen-min-xsm) {
+    p {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
 
   @media (min-width: @screen-min-sm) {
-    margin: 30px;
-  }
-
-  @media (min-width: @screen-min-md) {
-    margin: 45px auto;
-    max-width: (@screen-min-md - 90);
-
     h1 {
-      line-height: 42px;
-      font-size: 36px;
+      margin-top: 45px;
+      margin-bottom: 45px;
     }
 
     p {
-      line-height: 24px;
-      font-size: 16px;
+      padding-right: 45px;
+      padding-left: 45px;
     }
+  }
+}
+
+//
+// Retina image replacement
+//
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .cover h1 {
+    background-image: url("../img/logo/logo-kia-king@2x.png");
   }
 }

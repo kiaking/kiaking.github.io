@@ -1,15 +1,10 @@
 //
 // Scaffoldings
-//
-// Define global base styling here. It should only be plane elements and do
-// define classes or ids. Those should go in to modules.
-//
-// @author Kia King Ishii <kia.king.08@gmail.com>
-//
+// -----------------------------------------------
 
 //
 // Reset the box-sizing
-//
+// -----------------------------------------------
 
 * {
   .box-sizing(border-box);
@@ -22,7 +17,7 @@
 
 //
 // Body settings
-//
+// -----------------------------------------------
 
 html {
   font-size: 62.5%;
@@ -30,10 +25,6 @@ html {
 }
 
 body {
-  background-image: url("../img/bg/bg-gray-noise.png");
-  background-position: 0 0;
-  background-size: 100px 100px;
-  background-repeat: repeat;
   background-color: @body-bg;
   line-height: @line-height-base;
   font-family: @font-family-base;
@@ -44,7 +35,7 @@ body {
 
 //
 // Text selection. Customize the background color to match your design.
-//
+// -----------------------------------------------
 
 ::-moz-selection {
   background-color: #b3d4fc;
@@ -58,7 +49,7 @@ body {
 
 //
 // Headings
-//
+// -----------------------------------------------
 
 h1,
 h2,
@@ -67,50 +58,22 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: @headings-font-family;
-  font-weight: @headings-font-weight;
-  color: @headings-color;
-}
-
-h1 {
-  line-height: @heading1-line-height;
-  font-size: @heading1-font-size;
-}
-
-h2 {
-  line-height: @heading2-line-height;
-  font-size: @heading2-font-size;
-}
-
-h3 {
-  line-height: @heading3-line-height;
-  font-size: @heading3-font-size;
-}
-
-h4 {
-  line-height: @heading4-line-height;
-  font-size: @heading4-font-size;
-}
-
-h5 {
-  line-height: @heading5-line-height;
-  font-size: @heading5-font-size;
-}
-
-h6 {
-  line-height: @heading6-line-height;
-  font-size: @heading6-font-size;
+  line-height: @line-height-base;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  font-weight: @font-weight-base;
+  color: @text-color;
 }
 
 //
 // Body text
-//
+// -----------------------------------------------
 
 p { margin: 0 }
 
 //
 // Links
-//
+// -----------------------------------------------
 
 a {
   text-decoration: none;
@@ -125,21 +88,19 @@ a {
 
 //
 // Figures
-//
+// -----------------------------------------------
 
 figure { margin: 0; }
 
 //
 // Images
-//
+// -----------------------------------------------
 
 img { vertical-align: middle; }
 
 //
 // Lists
-//
-// @author Kia King Ishii <kia.king.08@gmail.com>
-//
+// -----------------------------------------------
 
 ul,
 ol,
@@ -148,20 +109,13 @@ dl {
   margin-bottom: 0;
 }
 
-ul {
-  padding-left: 0;
-  list-style: none;
-}
-
 dd {
   margin-left: 0;
 }
 
 //
 // Forms
-//
-// Resets form related elements.
-//
+// -----------------------------------------------
 
 input,
 button,
@@ -189,17 +143,17 @@ legend {
 
 //
 // Table
-//
+// -----------------------------------------------
 
 table { width: 100%; }
 
 //
 // Horizontal rules
-//
+// -----------------------------------------------
 
 hr {
   margin-top: 0;
   margin-bottom: 0;
   border: 0;
-  border-top: 1px solid @hr-border;
+  border-top: 1px solid #eee;
 }

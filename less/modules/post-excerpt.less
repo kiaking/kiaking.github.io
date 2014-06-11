@@ -1,0 +1,49 @@
+//
+// Post excerpt module
+//
+// Style each post excerpt.
+// -----------------------------------------------
+
+.post-excerpt {
+  header { padding-bottom: 12px; }
+
+  .posted {
+    line-height: 22px;
+    font-size: 12px;
+    color: #999;
+
+    time { color: #333; }
+  }
+
+  .title {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .excerpt {
+    margin-bottom: 11px;
+    color: #666;
+  }
+
+  @media (min-width: @screen-min-sm) {
+    header { padding-bottom: 13px; }
+
+    .posted {
+      line-height: 24px;
+      font-size: 14px;
+    }
+
+    .title {
+      line-height: 34px;
+      font-size: 24px;
+    }
+
+    .excerpt,
+    .read-more {
+      line-height: 26px;
+      font-size: 16px;
+    }
+
+    .excerpt { margin-bottom: 12px; }
+  }
+}

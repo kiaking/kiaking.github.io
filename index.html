@@ -1,22 +1,30 @@
 ---
 layout: default
-title: Everything Is Possible
+title: WEB DESIGN from SERVER ARCHITECTURE to CODING through DESIGN with LIFE HACK
 excerpt: WEBデベロップメント / WEBデザインに関するあらゆる情報を紹介しています。サーバ構築からコーディング、グラフィックデザイン、はてはVCSやライフハックまで、僕が見つけた素晴らしいと思えるもの全てを世界に発信します。
 ---
 <div class="cover">
-  <h1>EVERYTHING IS POSSIBLE</h1>
+  <h1>KIA KING | EVERYTHING IS POSSIBLE</h1>
   <p>
-    WEB DEVELOPMENT and DESIGN from SERVER ARCHITECTURE to CODING through GRAPHIC DESIGN with LIFE HACK
+    WEB DESIGN from SERVER ARCHITECTURE to CODING through DESIGN with LIFE HACK
   </p>
 </div>
 
-<main class="articles">
+<main class="posts">
   {% for post in site.posts %}
-    <article>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="posted">Posted on <span>{{ post.date | date_to_long_string }}</span></p>
-      <p class="excerpt">{{ post.excerpt }}</p>
-      <p class="read"><a class="btn default" href="{{ post.url }}">この記事を読む</a></p>
+    <article class="post-excerpt">
+      <header>
+        <p class="posted">
+          Posted on <time datetime="{{ post.date | date: '%F' }}">{{ post.date | date: "%F" }}</time>
+        </p>
+        <h2 class="title">
+          <a class="link dark" href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+      </header>
+      <p class="excerpt">{{ post.excerpt | strip_html }}</p>
+      <p class="read-more">
+        <a class="link" href="{{ post.url }}">この記事を読む</a>
+      </p>
     </article>
   {% endfor %}
 </main>
