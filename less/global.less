@@ -1,22 +1,17 @@
 //
 // Global
-//
-// Include all of the global modules and layout. Basically, converting this
-// file to CSS is enough.
-//
+// -----------------------------------------------
 
 //
 // Variables and Mixins
-//
+// -----------------------------------------------
 
 @import "variables/variables.less";
 @import "mixins/mixins.less";
 
 //
-// Bootstraps
-//
-// Import variable, mixins and scaffoldings.
-//
+// Base
+// -----------------------------------------------
 
 @import "base/normalize.less";
 @import "base/print.less";
@@ -24,25 +19,20 @@
 
 //
 // Modules
-//
-// Import modules here.
-//
+// -----------------------------------------------
 
 @import "modules/utilities.less";
-@import "modules/buttons.less";
+@import "modules/links.less";
+@import "modules/typography.less";
+@import "modules/post-excerpt.less";
+@import "modules/article.less";
 
 //
 // Layouts
-//
-// Import layouts here.
-//
+// -----------------------------------------------
 
-@import "layouts/container.less";
 @import "layouts/header.less";
 @import "layouts/footer.less";
-
-//
-// Vendors
-//
-// Import vendor specifics here.
-//
+@import "layouts/cover.less";
+@import "layouts/posts.less";
+@import "layouts/post.less";

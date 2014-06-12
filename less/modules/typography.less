@@ -1,0 +1,35 @@
+//
+// Typography module
+//
+// Defines text styling.
+// -----------------------------------------------
+
+//
+// Text helper kind of module
+//
+// Definds various helper modules under text name space.
+//
+// Markup:
+//   <p class="text center small">Small centered text</p>
+//
+.text {
+
+  //
+  // Alignments
+  // -----------------------------------------------
+
+  &.left   { text-align: left; }
+  &.center { text-align: center; }
+  &.right  { text-align: right; }
+
+  //
+  // Size adjustment
+  //
+  // It will also set appropriate line-height as well.
+  // -----------------------------------------------
+
+  &.small {
+    line-height: @line-height-small;
+    font-size: @font-size-small;
+  }
+}

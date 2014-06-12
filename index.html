@@ -1,8 +1,30 @@
 ---
 layout: default
-title: Everything Is Possible
+title: WEB DESIGN from SERVER ARCHITECTURE to CODING through DESIGN with LIFE HACK
+excerpt: WEBデベロップメント / WEBデザインに関するあらゆる情報を紹介しています。サーバ構築からコーディング、グラフィックデザイン、はてはVCSやライフハックまで、僕が見つけた素晴らしいと思えるもの全てを世界に発信します。
 ---
-<div class="container">
-  <h1>Kia King</h1>
-  <p>Official Blog of Kia King. Comming Soon.</p>
+<div class="cover">
+  <h1>KIA KING | EVERYTHING IS POSSIBLE</h1>
+  <p>
+    WEB DESIGN from SERVER ARCHITECTURE to CODING through DESIGN with LIFE HACK
+  </p>
 </div>
+
+<main class="posts">
+  {% for post in site.posts %}
+    <article class="post-excerpt">
+      <header>
+        <p class="posted">
+          Posted on <time datetime="{{ post.date | date: '%F' }}">{{ post.date | date: "%F" }}</time>
+        </p>
+        <h2 class="title">
+          <a class="link dark" href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+      </header>
+      <p class="excerpt">{{ post.excerpt | strip_html }}</p>
+      <p class="read-more">
+        <a class="link" href="{{ post.url }}">この記事を読む</a>
+      </p>
+    </article>
+  {% endfor %}
+</main>

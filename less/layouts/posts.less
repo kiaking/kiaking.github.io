@@ -1,0 +1,21 @@
+//
+// Posts layout
+//
+// List of posts with excerption and more.
+// -----------------------------------------------
+
+.posts {
+  padding: 30px 15px 45px;
+
+  @media (min-width: @screen-min-xsm) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: @screen-min-sm) {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 45px 0 60px;
+    width: (@screen-min-sm - 90);
+  }
+}

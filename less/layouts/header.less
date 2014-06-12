@@ -1,33 +1,25 @@
 //
 // Global Header Layout
-//
+// -----------------------------------------------
 
-//
-// Wrapper of header
-//
 .header {
-  padding: 15px;
-  background-color: #2e3133;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: @bg-deep-black;
 
   .brand {
     display: block;
-    width: 164px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 32px;
     height: 32px;
-    background-image: url('../img/logo/logo-kia-king.png');
+    background-image: url('../img/logo/logo-kias-crown.png');
     background-position: 0 0;
-    background-size: 164px 32px;
+    background-size: 32px 32px;
     background-repeat: no-repeat;
     font: ~"0/0" a;
     color: transparent;
     text-shadow: none;
-  }
-
-  @media (min-width: @screen-min-sm) {
-    padding-left: 30px;
-  }
-
-  @media (min-width: @screen-min-md) {
-    padding-left: 45px;
   }
 }
 
@@ -42,6 +34,6 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .header .brand {
-    background-image: url("../img/logo/logo-kia-king@2x.png");
+    background-image: url("../img/logo/logo-kias-crown@2x.png");
   }
 }

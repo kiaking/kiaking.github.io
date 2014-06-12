@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post article">
+  <header>
+    <p class="posted">
+      Posted on <time datetime="{{ page.date | date: '%F' }}">{{ page.date | date: "%F" }}</time>
+    </p>
+    <h1>{{ page.title }}</h1>
+  </header>
+  {{ content }}
+</article>

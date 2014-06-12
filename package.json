@@ -1,13 +1,4 @@
 {
-  "name": "kia-king",
-  "version": "1.0.0",
-  "description": "Everything Is Possible.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/kiaking/kiaking.github.io.git"
-  },
-  "author": "Kia King Ishii <kia.king.08@gmail.com>",
-  "homepage": "https://github.com/kiaking/kiaking.github.io",
   "devDependencies": {
     "grunt": "^0.4.4",
     "grunt-contrib-watch": "^0.6.1",
