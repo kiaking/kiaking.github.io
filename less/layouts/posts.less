@@ -5,7 +5,9 @@
 // -----------------------------------------------
 
 .posts {
-  padding: 30px 15px 45px;
+  padding: 30px 15px 0;
+
+  .post-excerpt { margin-bottom: 45px; }
 
   @media (min-width: @screen-min-xsm) {
     padding-right: 30px;
@@ -15,7 +17,9 @@
   @media (min-width: @screen-min-sm) {
     margin-right: auto;
     margin-left: auto;
-    padding: 45px 0 60px;
+    padding: 45px 0 0;
     width: (@screen-min-sm - 90);
+
+    .post-excerpt { margin-bottom: 60px; }
   }
 }
