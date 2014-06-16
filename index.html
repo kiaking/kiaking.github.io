@@ -21,6 +21,14 @@ excerpt: WEBデベロップメント / WEBデザインに関するあらゆる�
           <a class="link dark" href="{{ post.url }}">{{ post.title }}</a>
         </h2>
       </header>
+
+      {% if post.video_url %}
+        <div class="video">
+          <iframe src="{{ post.video_url }}" frameborder="0" allowfullscreen="true">
+          </iframe>
+        </div>
+      {% endif %}
+
       <p class="excerpt">{{ post.excerpt | strip_html }}</p>
       <p class="read-more">
         <a class="link" href="{{ post.url }}">この記事を読む</a>
