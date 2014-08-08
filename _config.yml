@@ -1,5 +1,6 @@
-permalink: /:categories/:title
+permalink: /blog/:categories/:title
 exclude:
+    - bower_components
     - CNAME
     - less
     - node_modules

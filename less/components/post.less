@@ -1,0 +1,136 @@
+//
+// Post Excerpt
+// -----------------------------------------------
+
+.Post {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 45px 15px 60px;
+  max-width: @screen-min-sm;
+
+  @media (min-width: @screen-min-sm) {
+    padding: 60px 45px 80px;
+  }
+
+  //
+  // Markdown styles
+  // -----------------------------------------------
+
+  h2,
+  p,
+  ul,
+  ol {
+    margin-bottom: 24px;
+
+    @media (min-width: @screen-min-sm) {
+      margin-bottom: 26px;
+    }
+  }
+
+  h2 {
+    margin-top: 48px;
+    border-top: 1px solid #ccc;
+    padding-top: 24px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+
+    @media (min-width: @screen-min-sm) {
+      margin-top: 52px;
+      padding-top: 26px;
+      line-height: 34px;
+      font-size: 24px;
+    }
+  }
+
+  p,
+  li {
+    @media (min-width: @screen-min-sm) {
+      line-height: 26px;
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    padding-left: 40px;
+    list-style: disc;
+
+    @media (min-width: @screen-min-sm) {
+      margin-bottom: 26px;
+    }
+  }
+
+  ol {
+    padding-left: 40px;
+    list-style: decimal;
+
+    @media (min-width: @screen-min-sm) {
+      margin-bottom: 26px;
+    }
+  }
+
+  li {
+    margin-bottom: 5px;
+
+    @media (min-width: @screen-min-sm) {
+      margin-bottom: 8px;
+    }
+  }
+
+  //
+  // Descendents
+  // -----------------------------------------------
+
+  .Post-title {
+    margin-bottom: 10px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 18px;
+
+    @media (min-width: @screen-min-sm) {
+      line-height: 34px;
+      font-size: 24px;
+    }
+  }
+
+  .Post-published {
+    margin-bottom: 36px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    color: #999;
+
+    @media (min-width: @screen-min-sm) {
+      margin-bottom: 39px;
+      line-height: 24px;
+      font-size: 14px;
+    }
+  }
+
+  .Post-video {
+    display: block;
+    position: relative;
+    margin-bottom: 24px;
+    padding: 0 0 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      border: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (min-width: @screen-min-sm) {
+      margin-bottom: 26px;
+    }
+  }
+}

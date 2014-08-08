@@ -17,4 +17,6 @@ $RECYCLE.BIN/
 # User specific & automatically generated files
 #
 _site
+bower_components
+js/vendors
 node_modules

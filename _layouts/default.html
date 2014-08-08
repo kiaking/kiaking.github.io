@@ -2,14 +2,14 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja-jp"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{{ page.title }} | Kia King</title>
 
-    <meta name="description" content="{{ page.excerpt }}">
+    <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/css/global.css">
@@ -22,6 +22,8 @@
     {{ content }}
 
     {% include footer.html %}
+
+    <script src="/js/vendors/picturefill.min.js"></script>
 
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
