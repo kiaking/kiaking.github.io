@@ -1,0 +1,63 @@
+//
+// Post Excerpt
+// -----------------------------------------------
+
+.PostExcerpt {
+  display: block;
+  border-top: 1px solid #ccc;
+  padding: 24px 15px;
+  background-color: transparent;
+  .transition(border-top-color .3s, background-color .3s;);
+
+  &:hover {
+    border-top-color: @brand-primary;
+    background-color: #fff;
+    text-decoration: none;
+  }
+
+  @media (min-width: @screen-min-sm) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.PostExcerpt-published {
+  line-height: 26px;
+  font-size: 12px;
+  color: #999;
+}
+
+.PostExcerpt-title {
+  margin-bottom: 12px;
+  line-height: 26px;
+  font-size: 16px;
+  .transition(color .3s);
+
+  .PostExcerpt:hover & {
+    color: @brand-primary;
+  }
+
+  @media (min-width: @screen-min-sm) {
+    font-size: 20px;
+  }
+}
+
+.PostExcerpt-body {
+  margin-bottom: 24px;
+  color: #666;
+  .transition(color .3s);
+
+  .PostExcerpt:hover & {
+    color: #333;
+  }
+}
+
+.PostExcerpt-readmore {
+  color: @brand-primary;
+  .transition(color .3s;);
+
+  .PostExcerpt:hover & {
+    text-decoration: underline;
+    color: @brand-primary;
+  }
+}
