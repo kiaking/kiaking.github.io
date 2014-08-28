@@ -18,5 +18,4 @@ $RECYCLE.BIN/
 #
 _site
 bower_components
-js/vendors
 node_modules
