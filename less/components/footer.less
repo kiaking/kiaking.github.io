@@ -3,9 +3,65 @@
 // -----------------------------------------------
 
 .Footer {
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.Footer-profileImage {
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  .box-shadow(0 3px 10px rgba(0, 0, 0, 0.35));
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.Footer-profileName {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.Footer-profileDescription {
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 480px;
+  color: #ccc;
+}
+
+.Footer-social {
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.Footer-socialItem {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  a {
+    color: #999;
+    .transition(color .5s);
+
+    &:hover,
+    &:focus {
+      color: @brand-primary;
+    }
+  }
+
+  i { font-size: 48px; }
 }
 
 .Footer-powered {
@@ -15,7 +71,7 @@
   color: #999;
 
   a {
-    color: #333;
+    color: #fff;
     .transition(color .3s);
   }
 
