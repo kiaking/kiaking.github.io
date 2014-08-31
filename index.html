@@ -4,26 +4,28 @@ title: Everything Is Possible
 description: WEBデベロップメント / WEBデザインに関するあらゆる情報を紹介しています。サーバ構築からコーディング、グラフィックデザイン、はてはライフハックまで、僕が見つけた素晴らしいと思えるもの全てを世界に発信します。
 ---
 <main class="Main">
+  <div class="Main-container">
 
-  <div class="PageTitle">
-    <h1 class="PageTitle-title">WEB from BACKEND to FRONTEND</h1>
+    <div class="PageTitle">
+      <h1 class="PageTitle-title">WEB from BACKEND to FRONTEND</h1>
+    </div>
+
+    {% for post in site.posts %}
+      <a class="PostExcerpt" href="{{ post.url }}">
+        <article class="post-excerpt">
+          <header>
+            <p class="PostExcerpt-published">
+              <time datetime="{{ post.date | date: '%F' }}">
+                {{ post.date | date: "%F" }}
+              </time>
+            </p>
+            <h2 class="PostExcerpt-title">{{ post.title }}</h2>
+          </header>
+          <p class="PostExcerpt-body">{{ post.excerpt | strip_html }}</p>
+          <p class="PostExcerpt-readmore">この記事を読む</p>
+        </article>
+      </a>
+    {% endfor %}
+
   </div>
-
-  {% for post in site.posts %}
-    <a class="PostExcerpt" href="{{ post.url }}">
-      <article class="post-excerpt">
-        <header>
-          <p class="PostExcerpt-published">
-            <time datetime="{{ post.date | date: '%F' }}">
-              {{ post.date | date: "%F" }}
-            </time>
-          </p>
-          <h2 class="PostExcerpt-title">{{ post.title }}</h2>
-        </header>
-        <p class="PostExcerpt-body">{{ post.excerpt | strip_html }}</p>
-        <p class="PostExcerpt-readmore">この記事を読む</p>
-      </article>
-    </a>
-  {% endfor %}
-
 </main>

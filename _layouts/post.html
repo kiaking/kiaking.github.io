@@ -2,20 +2,23 @@
 layout: default
 ---
 <article class="Post">
-  <header>
-    <h1 class="Post-title">{{ page.title }}</h1>
-    <p class="Post-published">
-      Published:
-      <time datetime="{{ page.date | date: '%F' }}">{{ page.date | date: "%F" }}</time>
-    </p>
-  </header>
+  <div class="Post-container">
+    <header>
+      <h1 class="Post-title">{{ page.title }}</h1>
+      <p class="Post-published">
+        Published:
+        <time datetime="{{ page.date | date: '%F' }}">{{ page.date | date: "%F" }}</time>
+      </p>
+    </header>
 
-  {% if page.video_url %}
-    <div class="Post-video">
-      <iframe src="{{ page.video_url }}" allowfullscreen="true">
-      </iframe>
-    </div>
-  {% endif %}
+    {% if page.video_url %}
+      <div class="Post-video">
+        <iframe src="{{ page.video_url }}" allowfullscreen="true">
+        </iframe>
+      </div>
+    {% endif %}
 
-  {{ content }}
+    {{ content }}
+
+  </div>
 </article>
