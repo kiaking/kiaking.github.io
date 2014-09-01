@@ -21,7 +21,8 @@
   h2,
   p,
   ul,
-  ol {
+  ol,
+  pre {
     margin-bottom: 24px;
 
     @media (min-width: @screen-min-sm) {
@@ -47,7 +48,8 @@
   }
 
   p,
-  li {
+  li,
+  pre {
     @media (min-width: @screen-min-sm) {
       line-height: 26px;
       font-size: 16px;
@@ -78,6 +80,26 @@
     @media (min-width: @screen-min-sm) {
       margin-bottom: 8px;
     }
+  }
+
+  pre {
+    margin-top: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    background-color: #fff;
+
+    @media (min-width: @screen-min-sm) {
+      padding: 15px;
+    }
+  }
+
+  code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #c7254e;
   }
 
   //
