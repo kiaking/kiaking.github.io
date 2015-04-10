@@ -1,11 +1,17 @@
 permalink: /blog/:categories/:title
+
 exclude:
-    - bower_components
+    - .editorconfig
+    - .gitattributes
+    - .gitignore
     - CNAME
     - less
     - node_modules
     - Gemfile
     - Gemfile.lock
-    - Gruntfile.js
+    - gulpfile.js
     - package.json
+
+timezone: Asia/Tokyo
+
 encoding: 'UTF-8'

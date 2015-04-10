@@ -1,4 +1,5 @@
 {
+  "private": true,
   "devDependencies": {
     "gulp": "^3.8.7",
     "gulp-cssmin": "^0.1.6",

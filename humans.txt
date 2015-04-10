@@ -3,8 +3,6 @@
 
 # TEAM
 
-    Kia King Ishii -- Developer -- @kiaking85
-
-# TECHNOLOGY COLOPHON
-
-    HTML, CSS, JavaScript, Jekyll
+    Kia King Ishii
+    Site: http://kia-king.com
+    Location: Kanagawa, Japan
