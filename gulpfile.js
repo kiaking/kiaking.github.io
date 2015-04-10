@@ -1,45 +1,22 @@
-var gulp        = require('gulp');
-var path        = require('path');
-var cssmin      = require('gulp-cssmin');
-var less        = require('gulp-less');
-var runSequence = require('run-sequence');
+/*
+|--------------------------------------------------------------------------
+| Bootstrap Gulp Tasks and Declare Default Task
+|--------------------------------------------------------------------------
+|
+| Here we bootstrap gulp task and declare default gulp task. Every other tasks
+| should be placed in `tasks` folder and it will be loaded automatically.
+|
+*/
+
+var gulp = require('gulp');
+var util = require('gulp-util');
+var requireDir = require('require-dir');
+
+// If gulp is executed with option of `production` flag, do not include
+// development related tasks.
+requireDir('./tasks', { recurse: util.env.production ? false : true });
 
 /**
- * Watch less files and compile on every change.
+ * Default task for gulp.
  */
-gulp.task('watch', function () {
-  return gulp.watch('./less/**/*.less', ['less']);
-});
-
-/**
- * Compile less file. Thsi task will not minify the css. Use `cssmin` for that.
- */
-gulp.task('less', function () {
-  return gulp.src('./less/global.less')
-    .pipe(less())
-    .pipe(gulp.dest('./css'));
-});
-
-/**
- * Minify css files.
- */
-gulp.task('cssmin', function () {
-  return gulp.src('./css/**/*.css')
-    .pipe(cssmin())
-    .pipe(gulp.dest('./css'));
-});
-
-/**
- * Defaukt task for Gulp. Compile less and start watch task.
- */
-gulp.task('default', ['less', 'watch']);
-
-/**
- * Build task. Currently it will compile less file and minify it.
- */
-gulp.task('build', function () {
-  runSequence(
-    'less',
-    'cssmin'
-  );
-});
+gulp.task('default', ['build']);
