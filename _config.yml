@@ -4,6 +4,7 @@ exclude:
     - .editorconfig
     - .gitattributes
     - .gitignore
+    - tasks
     - CNAME
     - less
     - node_modules
